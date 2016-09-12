@@ -1,0 +1,11 @@
+index: index
+quantdir: quantdir
+transcripts:
+  class: File
+  path: sample_data/transcripts.fasta
+inf1:
+  class: File
+  path: sample_data/reads_1.fastq
+inf2:
+  class: File
+  path: sample_data/reads_2.fastq

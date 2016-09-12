@@ -1,7 +1,7 @@
 cwlVersion: v1.0
 class: CommandLineTool
 baseCommand: salmon
-arguments: ["index"]
+arguments: [index]
 inputs:
   - id: index
     type: string
