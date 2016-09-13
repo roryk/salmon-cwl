@@ -12,4 +12,4 @@ inf2:
     path: sample_data/reads_2.fastq
   - class: File
     path: sample_data/reads_2.fastq
-quantdir: [sample1, sample2]
+samplename: [sample1, sample2]

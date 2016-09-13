@@ -5,7 +5,7 @@ inputs:
   transcripts: File
   inf1: File[]
   inf2: File[]
-  quantdir: string[]
+  samplename: string[]
 requirements:
   - class: ScatterFeatureRequirement
 
@@ -30,7 +30,7 @@ steps:
       index: quasiindex/index
       inf1: inf1
       inf2: inf2
-      quantdir: quantdir
+      quantdir: samplename
     out: [quantdir]
     scatter:
       - inf1
