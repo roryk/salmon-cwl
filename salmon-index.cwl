@@ -3,11 +3,11 @@ class: CommandLineTool
 baseCommand: salmon
 arguments: [index]
 inputs:
-  - id: index
+  index:
     type: string
     inputBinding:
       prefix: --index
-  - id: transcripts
+  transcripts:
     type: File
     inputBinding:
       prefix: --transcripts

@@ -6,6 +6,8 @@ inputs:
   inf1: File
   inf2: File
   quantdir: string
+requirements:
+  - class: ScatterFeatureRequirement
 
 outputs:
   index:
