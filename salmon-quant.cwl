@@ -33,4 +33,4 @@ outputs:
   quantdir:
     type: Directory
     outputBinding:
-      glob: "*"
+      glob: .

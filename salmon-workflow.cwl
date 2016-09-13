@@ -3,9 +3,9 @@ class: Workflow
 inputs:
   index: string
   transcripts: File
-  inf1: File
-  inf2: File
-  quantdir: string
+  inf1: File[]
+  inf2: File[]
+  quantdir: string[]
 requirements:
   - class: ScatterFeatureRequirement
 
@@ -13,6 +13,9 @@ outputs:
   index:
     type: Directory
     outputSource: quasiindex/index
+  quantdir:
+    type: Directory[]
+    outputSource: quant/quantdir
 
 steps:
   quasiindex:
@@ -29,3 +32,8 @@ steps:
       inf2: inf2
       quantdir: quantdir
     out: [quantdir]
+    scatter:
+      - inf1
+      - inf2
+      - quantdir
+    scatterMethod: dotproduct
