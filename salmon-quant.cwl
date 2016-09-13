@@ -29,6 +29,13 @@ inputs:
     default: A
     inputBinding:
       prefix: --libType
+  runThreadN:
+    type: int?
+    inputBinding:
+      prefix: --runThreadN
+    doc: |
+      1
+      int: number of threads to run Salmon
 outputs:
   quantdir:
     type: Directory
