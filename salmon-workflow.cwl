@@ -1,10 +1,6 @@
 cwlVersion: v1.0
 class: Workflow
 
-hints:
-  DockerRequirement:
-    dockerPull: combinelab/salmon
-
 inputs:
   index: string
   transcripts: File
